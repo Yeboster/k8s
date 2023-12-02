@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/metadata/annotations/helmcharts.helm.cattle.io~1unmanaged",
+    "value": "true"
+  }
+]
