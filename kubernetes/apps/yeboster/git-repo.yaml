@@ -1,0 +1,11 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: yeboster
+spec:
+  interval: 5m0s
+  ref:
+    branch: main
+  secretRef:
+    name: github
+  url: ssh://github.com/Yeboster/Yeboster.com.git
