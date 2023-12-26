@@ -36,15 +36,15 @@ spec:
   values:
     adminUser:
       create: true
-      passwordHash: $WEAVE_GITOPS_DASHBOARD_PASSWORD_HASH
-      username: $WEAVE_GITOPS_DASHBOARD_USER
+      passwordHash: ${WEAVE_GITOPS_DASHBOARD_PASSWORD_HASH}
+      username: ${WEAVE_GITOPS_DASHBOARD_USER}
     ingress:
       annotations:
         external-dns.alpha.kubernetes.io/target: "external.${SECRET_DOMAIN}"
       enabled: true
       className: external
       hosts:
-        - host: &host "$WEAVE_GITOPS_DASHBOARD_DOMAIN"
+        - host: &host "${WEAVE_GITOPS_DASHBOARD_DOMAIN}"
           paths:
             - path: /
       tls:
