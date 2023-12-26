@@ -41,7 +41,8 @@ spec:
     ingress:
       enabled: true
       className: external
-      hosts: &host "$WEAVE_GITOPS_DASHBOARD_DOMAIN"
+      hosts:
+        - &host "$WEAVE_GITOPS_DASHBOARD_DOMAIN"
       tls:
         - hosts:
             - *host
