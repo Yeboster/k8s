@@ -42,7 +42,9 @@ spec:
       enabled: true
       className: external
       hosts:
-        - &host "$WEAVE_GITOPS_DASHBOARD_DOMAIN"
+        - host: &host "$WEAVE_GITOPS_DASHBOARD_DOMAIN"
+          paths:
+            - path: /
       tls:
         - hosts:
             - *host
