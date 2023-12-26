@@ -50,6 +50,5 @@ spec:
       tls:
         - hosts:
             - *host
-          secretName: ww-gitops-tls
 
 
