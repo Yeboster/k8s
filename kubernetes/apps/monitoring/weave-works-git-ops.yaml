@@ -47,6 +47,7 @@ spec:
         - host: &host "${WEAVE_GITOPS_DASHBOARD_DOMAIN}"
           paths:
             - path: /
+              pathType: Prefix
       tls:
         - hosts:
             - *host
